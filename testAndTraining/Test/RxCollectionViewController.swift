@@ -83,10 +83,6 @@ class RxCollectionViewController: UIViewController {
 //        return cell
 //    })
     
-    
-    internal func numberOfSections(in collectionView: UICollectionView) -> Int {
-            return 1
-        }
 }
 
 extension RxCollectionViewController: UICollectionViewDelegateFlowLayout {
