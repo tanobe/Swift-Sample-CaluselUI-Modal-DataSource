@@ -59,8 +59,13 @@ class RxCollectionViewController: UIViewController {
         view.backgroundColor = UIColor(named: "modal_Mask")
         view.addSubview(collectionView)
         
-//        collectionView.centerYAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
-//        collectionView.la.centerY(equalTo: view.centerYAnchor)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+//        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+//        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         collectionView.delegate = self
         collectionView.register(RxCollectionViewCell.self, forCellWithReuseIdentifier: RxCollectionViewCell.reuseIdentifier)
