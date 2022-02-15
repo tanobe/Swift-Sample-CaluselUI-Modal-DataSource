@@ -29,24 +29,52 @@ class RxCollectionViewModel: UserChallengeProfilesViweModelType, UserChallengePr
     private let disposeBag = DisposeBag()
     
     init() {
-        var sections: [UserChallengeProfilesModel] = [
-            UserChallengeProfilesModel(items: [UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー1")]))]),
-            UserChallengeProfilesModel(items: [UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー2")]))]),
-            UserChallengeProfilesModel(items: [UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー3"),
-                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("2行目")]))]),
-            UserChallengeProfilesModel(items: [UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー4"),
-                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("2行目")]))]),
-            UserChallengeProfilesModel(items: [UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー5"),
-                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("2行目"),
-                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("3行目"),
-                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("4行目"),
-                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("5行目"),
-                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("6行目"),
-                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("7行目"),
-                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("8行目"),]))])
+        var section: [UserChallengeProfilesModel] = [
+            UserChallengeProfilesModel(items: [UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー1")])),
+                                               UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー2")])),
+                                               UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー3")])),
+                                               UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー4"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/2行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/3行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/4行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/5行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/6行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/7行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/8行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/9行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/10行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/11行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/12行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/13行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー4/14行目")])),
+                                               UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー5"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/2行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/3行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/4行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/5行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/6行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/7行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/8行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/9行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/10行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/11行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/12行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/13行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/14行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/15行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/16行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/17行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/18行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/19行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/20行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/21行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/22行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/23行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/24行目"),
+                                                                                                                            UserChallengeProfileRowItem.selfIntroduction("ユーザー5/25行目")]))
+                                              ])
         ]
-        
-        sectionItems = Driver.just(sections)
+        sectionItems = Driver.just(section)
     }
 }
 
@@ -72,7 +100,7 @@ enum UserChallengeProfilesRowItem {
 // MARK: - Data (1人分のユーザー情報のデータ）
 
 struct UserChallengeProfileModel {
-    var items: [Item]
+    var items: [UserChallengeProfileRowItem]
 }
 
 extension UserChallengeProfileModel: SectionModelType {
@@ -96,27 +124,3 @@ struct MemberProfile {
 
 
 
-
-
-//let testPath = "https://s3-ap-northeast-1.amazonaws.com/minchalle/users/17/action/9a41bb7a-b10b-4984-b6c5-6e6747492707/thumb.jpg"
-
-//        var sections: [UserChallengeProfilesModel] = [
-//            UserChallengeProfilesModel(items: [
-//                UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー１")]))
-//            ]),
-//            UserChallengeProfilesModel(items: [
-//                UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー2")]))
-//            ]),
-//            UserChallengeProfilesModel(items: [
-//                UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー3")]))
-//            ]),
-//            UserChallengeProfilesModel(items: [
-//                UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー4")]))
-//            ]),
-//            UserChallengeProfilesModel(items: [
-//                UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー5")])),
-//                UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー6")])),
-//                UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー7")])),
-//                UserChallengeProfilesRowItem.memberProfile(UserChallengeProfileModel(items: [UserChallengeProfileRowItem.selfIntroduction("ユーザー8")]))
-//            ])
-//        ]
