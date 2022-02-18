@@ -24,22 +24,6 @@ class RxCollectionViewController: UIViewController {
         return collectionView
     }()
         
-//    private let collectionView: UICollectionView = {
-//        let flowLayout: CollectionViewFlowLayoutLeftAlign = {
-//            let layout = CollectionViewFlowLayoutLeftAlign()
-//            layout.estimatedItemSize = CGSize(width: 75, height: 25)
-//            layout.sectionInset = UIEdgeInsets(top: 5, left: 10, bottom: 10, right: 10)
-//            layout.minimumLineSpacing = 1
-//            layout.minimumInteritemSpacing = 1
-//            return layout
-//        }()
-//
-//        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height), collectionViewLayout: flowLayout)
-//        collectionView.backgroundColor = .clear
-//        return collectionView
-//    }()
-    
-    
     init() {
         self.viewModel = RxCollectionViewModel()
         super.init(nibName: nil, bundle: nil)
@@ -61,10 +45,8 @@ class RxCollectionViewController: UIViewController {
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
-        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-//        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-//        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         collectionView.delegate = self
@@ -81,12 +63,6 @@ class RxCollectionViewController: UIViewController {
             return cell
         }
     })
-    
-//    private lazy var dataSource = RxCollectionViewSectionedReloadDataSource<UserChallengeProfilesModel>(configureCell: { _, collectionView, indexPath, item in
-//        let cell: RxCollectionViewCell =  collectionView.dequeueReusableCell(withReuseIdentifier: RxCollectionViewCell.reuseIdentifier, for: indexPath) as! RxCollectionViewCell
-//        cell.configureCell(with: [item])
-//        return cell
-//    })
     
 }
 
