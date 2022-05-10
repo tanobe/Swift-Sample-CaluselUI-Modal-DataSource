@@ -49,6 +49,17 @@ class RxCollectionViewController: UIViewController {
         collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
+        collectionView.rx.itemSelected
+            .subscribe(onNext: { indexPath in
+                print("セレクト")
+                print("1index_collectionView\(indexPath)")
+            }).disposed(by: disposeBag)
+        print("1index_collectionView_item\(collectionView.rx.itemSelected)")
+        
+        
+        collectionView.delegate = self
+        collectionView.reloadData()
+        
         collectionView.delegate = self
         collectionView.register(RxCollectionViewCell.self, forCellWithReuseIdentifier: RxCollectionViewCell.reuseIdentifier)
         

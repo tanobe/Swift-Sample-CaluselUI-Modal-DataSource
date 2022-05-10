@@ -13,9 +13,6 @@
 		B263842327B27FCF004EA6D5 /* flowlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263842227B27FCF004EA6D5 /* flowlayout.swift */; };
 		B291A8FD279AC04C00DFA309 /* RxCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B291A8FC279AC04C00DFA309 /* RxCollectionViewController.swift */; };
 		B291A8FF279BEBC900DFA309 /* CarouselCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B291A8FE279BEBC900DFA309 /* CarouselCollectionViewFlowLayout.swift */; };
-		B291A902279BED5400DFA309 /* UIView+NSLayoutAnchorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B291A901279BED5400DFA309 /* UIView+NSLayoutAnchorExtension.swift */; };
-		B291A904279BEF3600DFA309 /* NSLayoutAnchor+constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B291A903279BEF3600DFA309 /* NSLayoutAnchor+constraint.swift */; };
-		B291A906279BF08A00DFA309 /* NSLayoutDimension+constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B291A905279BF08A00DFA309 /* NSLayoutDimension+constraint.swift */; };
 		B291A90B279BF5CB00DFA309 /* RxCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B291A90A279BF5CB00DFA309 /* RxCollectionViewModel.swift */; };
 		B2B0B97D273A5BFB000523D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B0B97C273A5BFB000523D3 /* AppDelegate.swift */; };
 		B2B0B97F273A5BFB000523D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B0B97E273A5BFB000523D3 /* SceneDelegate.swift */; };
@@ -63,9 +60,6 @@
 		B263842227B27FCF004EA6D5 /* flowlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flowlayout.swift; sourceTree = "<group>"; };
 		B291A8FC279AC04C00DFA309 /* RxCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewController.swift; sourceTree = "<group>"; };
 		B291A8FE279BEBC900DFA309 /* CarouselCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		B291A901279BED5400DFA309 /* UIView+NSLayoutAnchorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NSLayoutAnchorExtension.swift"; sourceTree = "<group>"; };
-		B291A903279BEF3600DFA309 /* NSLayoutAnchor+constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutAnchor+constraint.swift"; sourceTree = "<group>"; };
-		B291A905279BF08A00DFA309 /* NSLayoutDimension+constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutDimension+constraint.swift"; sourceTree = "<group>"; };
 		B291A90A279BF5CB00DFA309 /* RxCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewModel.swift; sourceTree = "<group>"; };
 		B2B0B979273A5BFB000523D3 /* testAndTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testAndTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B0B97C273A5BFB000523D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,9 +150,6 @@
 		B291A909279BF0D700DFA309 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B291A901279BED5400DFA309 /* UIView+NSLayoutAnchorExtension.swift */,
-				B291A903279BEF3600DFA309 /* NSLayoutAnchor+constraint.swift */,
-				B291A905279BF08A00DFA309 /* NSLayoutDimension+constraint.swift */,
 				B2B1E2B127AD031100BF0D5B /* UITableView+ReuseIdentifierExtension.swift */,
 				B263842227B27FCF004EA6D5 /* flowlayout.swift */,
 			);
@@ -493,8 +484,6 @@
 			files = (
 				B291A8FF279BEBC900DFA309 /* CarouselCollectionViewFlowLayout.swift in Sources */,
 				B263842327B27FCF004EA6D5 /* flowlayout.swift in Sources */,
-				B291A904279BEF3600DFA309 /* NSLayoutAnchor+constraint.swift in Sources */,
-				B291A902279BED5400DFA309 /* UIView+NSLayoutAnchorExtension.swift in Sources */,
 				B2D99DA8274E61DC00190D9E /* PopupView.swift in Sources */,
 				B291A8FD279AC04C00DFA309 /* RxCollectionViewController.swift in Sources */,
 				B2D99DAC2750B8C600190D9E /* Utility.swift in Sources */,
@@ -504,7 +493,6 @@
 				B2D99D9F2745015D00190D9E /* ContentView.swift in Sources */,
 				B2D99DA627477B6500190D9E /* TestUITableView.swift in Sources */,
 				B2B0B97D273A5BFB000523D3 /* AppDelegate.swift in Sources */,
-				B291A906279BF08A00DFA309 /* NSLayoutDimension+constraint.swift in Sources */,
 				B2B0B97F273A5BFB000523D3 /* SceneDelegate.swift in Sources */,
 				B2BCA9D0279EB53300FDB71E /* RxCollectionViewCell.swift in Sources */,
 				B2B1E2B027A9151100BF0D5B /* RxTableViewCell.swift in Sources */,

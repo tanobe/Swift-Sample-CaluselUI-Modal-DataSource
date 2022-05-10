@@ -81,8 +81,6 @@ class RxCollectionViewCell: UICollectionViewCell {
 //      忌々しいクソコード
 //        backgroundColor = .systemYellow
         
-        layer.cornerRadius = 5.0
-        
         contentView.addSubview(tableView)
         tableView.addSubview(titleLabel)
 
@@ -92,6 +90,13 @@ class RxCollectionViewCell: UICollectionViewCell {
         tableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10).isActive = true
         tableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
         
+        tableView.rx.itemSelected
+            .subscribe(onNext: { indexPath in
+                print("セレクト")
+                print("1index_tableView: \(indexPath)")
+            })
+            .disposed(by: disposeBag)
+        print("1index_tableView_item: \(tableView.rx.itemSelected)")
 //        tableView.reloadData()
     }
     
